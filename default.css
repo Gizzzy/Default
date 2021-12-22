@@ -1,11 +1,82 @@
-@import url("https://fonts.googleapis.com/css2?family=EB+Garamond&family=Lato:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Neuton:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Neuton:wght@200&family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Neuton:wght@200&family=Roboto:wght@300&family=Sanchez&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Neuton:wght@200&family=Prata&family=Roboto:wght@300&family=Sanchez&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karma:wght@500&family=Neuton:wght@200&family=Prata&family=Roboto:wght@300&family=Sanchez&display=swap");
 
-body {
-  margin: 10px;
-  padding: 10px;
-  line-height: 1.6;
-  font-size: 1.015rem;
-  /* font-size: 17px; */
+:root {
+  /*heading fonts */
+  --heading-font-1: "Neuton", sans-serif;
+  --heading-font-2: "Prata", sans-serif;
+
+  /* body fonts */
+  --body-font-1: "Roboto", sans-serif;
+  --body-font-2: "Sanchez", sans-serif;
+  --body-font-3: "karma", sans-serif;
+
+  /* font weights */
+  --font-weight-1: 400;
+  --font-weight-2: 600;
+
+  /* font sizes */
+  --font-size-1: 1rem;
+  --font-size-2: 1.025rem;
+
+  /* gray */
+  --gray-100: #f8fafc;
+  --gray-200: #f1f5f9;
+  --gray-300: #e2e8f0;
+  --gray-400: #cbd5e1;
+  --gray-500: #94a3b8;
+  --gray-600: #64748b;
+  --gray-700: #475569;
+  --gray-800: #334155;
+  --gray-900: #1e293b;
+  --gray-000: #0f172a;
+
+  /* primary */
+  --primary-100: #ccd6de;
+  --primary-200: #99aebd;
+  --primary-300: #66859b;
+  --primary-400: #335d7a;
+  --primary-500: #003459;
+  --primary-600: #002a47;
+  --primary-700: #001f35;
+  --primary-800: #001524;
+  --primary-900: #000a12;
+  --primary-000: #000000;
+
+  /* secondary */
+  --secondary-100: #e4e4fb;
+  --secondary-200: #c8c9f8;
+  --secondary-300: #adaef4;
+  --secondary-400: #9193f1;
+  --secondary-500: #7678ed;
+  --secondary-600: #5e60be;
+  --secondary-700: #47488e;
+  --secondary-800: #2f305f;
+  --secondary-900: #18182f;
+  --secondary-000: #000000;
+
+  /* fancy */
+  --fancy-100: #fcf4f8;
+  --fancy-200: #f9e9f1;
+  --fancy-300: #f7dee9;
+  --fancy-400: #f4d3e2;
+  --fancy-500: #f1c8db;
+  --fancy-600: #c1a0af;
+  --fancy-700: #917883;
+  --fancy-800: #605058;
+  --fancy-900: #30282c;
+  --fancy-000: #000000;
+
+  /* other variables */
+  --background-color: var(--gray-100);
+  --text-color: var(--gray-000);
+}
+
+html {
+  font-size: 100%;
 }
 
 * {
@@ -13,8 +84,24 @@ body {
   padding: 0;
 }
 
-:root {
-  /* fonts */
+*::after,
+::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 0.625rem;
+  padding: 0 0.625rem;
+  line-height: 1.75;
+  font-size: var(--font-size-1);
+  font-family: var(--body-font-3);
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+p {
+  margin: 0.625rem 0 1.25rem 0;
+  max-width: 600px;
 }
 
 h1,
@@ -23,4 +110,24 @@ h3,
 h4,
 h5,
 h6 {
+  margin: 1.25rem 0 0.625rem 0;
+  text-transform: capitalize;
+  line-height: 1.5;
+  font-weight: var(--font-weight-1);
+  font-family: var(--heading-font-2);
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+h4 {
+  font-size: 1rem;
 }
