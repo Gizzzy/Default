@@ -1,1 +1,26 @@
-/* This are the default syles to be used in all projects */
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond&family=Lato:wght@300&display=swap");
+
+body {
+  margin: 10px;
+  padding: 10px;
+  line-height: 1.6;
+  font-size: 1.015rem;
+  /* font-size: 17px; */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* fonts */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+}
