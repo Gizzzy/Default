@@ -5,7 +5,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Karma:wght@500&family=Neuton:wght@200&family=Prata&family=Roboto:wght@300&family=Sanchez&display=swap");
 
 :root {
-  /* grey */
+  /* grey shades*/
   --grey-100: #f8fafc;
   --grey-200: #f1f5f9;
   --grey-300: #e2e8f0;
@@ -16,7 +16,7 @@
   --grey-800: #334155;
   --grey-900: #1e293b;
 
-  /* primary */
+  /* primary (Blue shades) */
   --primary-100: #cde4fb;
   --primary-200: #9bcaf8;
   --primary-300: #68aff4;
@@ -27,7 +27,7 @@
   --primary-800: #02315f;
   --primary-900: #01182f;
 
-  /* secondary */
+  /* secondary (purple shades) */
   --secondary-100: #e2e0ff;
   --secondary-200: #c1beff;
   --secondary-300: #a29dff;
@@ -38,7 +38,7 @@
   --secondary-800: #282566;
   --secondary-900: #141233;
 
-  /* fancy */
+  /* tertiary (pink shades) */
   --tertiary-100: #fff4f7;
   --tertiary-200: #ffe9ef;
   --tertiary-300: #fedde7;
@@ -48,6 +48,39 @@
   --tertiary-700: #987781;
   --tertiary-800: #665056;
   --tertiary-900: #33282b;
+
+  /* stroke (green shades) */
+  --stroke-100: #cde6e6;
+  --stroke-200: #9ccccc;
+  --stroke-300: #6ab3b3;
+  --stroke-400: #399999;
+  --stroke-500: #078080;
+  --stroke-600: #066666;
+  --stroke-700: #044d4d;
+  --stroke-800: #033333;
+  --stroke-900: #011a1a;
+
+  /* spin (orange shades) */
+  --spin-100: #fddfda;
+  --spin-200: #fbbeb6;
+  --spin-300: #f89e91;
+  --spin-400: #f67d6d;
+  --spin-500: #f45d48;
+  --spin-600: #c34a3a;
+  --spin-700: #92382b;
+  --spin-800: #62251d;
+  --spin-900: #31130e;
+
+  /* split (yellow shades) */
+  --split-100: #ffe7cd;
+  --split-200: #ffd09b;
+  --split-300: #ffb86a;
+  --split-400: #ffa138;
+  --split-500: #ff8906;
+  --split-600: #cc6e05;
+  --split-700: #995204;
+  --split-800: #663702;
+  --split-900: #331b01;
 
   /* dark */
   --dark-color: #000000;
@@ -167,3 +200,6 @@ ul {
 .btn-primary {
   background-color: var(--primary-200);
 }
+
+/* headline, paragraph, stroke, main, 
+highlight, tertiary, spin, split, gin, rough */
