@@ -4,6 +4,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Neuton:wght@200&family=Roboto:wght@300&family=Sanchez&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Neuton:wght@200&family=Prata&family=Roboto:wght@300&family=Sanchez&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Karma:wght@500&family=Neuton:wght@200&family=Prata&family=Roboto:wght@300&family=Sanchez&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Proza+Libre&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Trirong&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Taviraj&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Eczar&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gentium+Basic&display=swap");
 
 :root {
   /* Grey shades*/
@@ -99,16 +109,29 @@
   --light-color: #ffffff;
 
   /*Heading fonts */
-  --headingfont-1: "Neuton", sans-serif;
+  --headingfont-1: "Neuton", sans-serif; /* */
   --headingfont-2: "Prata", sans-serif;
   --headingfont-3: "Lato", sans-serif;
+  --headingfont-4: "Cormorant Garamond", sans-serif;
+  --headingfont-5: "Gentium Basic", sans-serif;
+  --headingfont-6: "Eczar", sans-serif;
+  --headingfont-7: "Trirong", sans-serif;
+  --headingfont-8: "Proza Libre", sans-serif;
+  --headingfont-9: "Libre Franklin", sans-serif;
+  --headingfont-10: "Work Sans", sans-serif;
 
   /* Body fonts */
-  --bodyfont-1: "Roboto", sans-serif;
-  --bodyfont-2: "Sanchez", sans-serif;
-  --bodyfont-3: "karma", sans-serif;
-  --bodyfont-4: "Nunito", sans-serif;
-  --bodyfont-3: "Lato", sans-serif;
+  --bodyfont-1: "Roboto", sans-serif; /* */
+  --bodyfont-2: "Sanchez", sans-serif; /* */
+  --bodyfont-3: "karma", sans-serif; /* */
+  --bodyfont-4: "Nunito", sans-serif; /* */
+  --bodyfont-5: "Proza Libre", sans-serif;
+  --bodyfont-6: "Libre Franklin", sans-serif; /* */
+  --bodyfont-7: "Libre Baskerville", sans-serif;
+  --bodyfont-8: "Trirong", sans-serif; /* */
+  --bodyfont-9: "Rubik", sans-serif; /* */ /* */
+  --bodyfont-10: "Work Sans", sans-serif; /* */ /* */
+  --bodyfont-11: "Taviraj", sans-serif; /* */
 
   /* Font weights */
   --font-weight-1: 400;
@@ -164,7 +187,7 @@ html {
 body {
   line-height: 1.75;
   font-size: var(--font-size-1);
-  font-family: var(--bodyfont-4);
+  font-family: var(--bodyfont-11);
   background-color: var(--background-color);
   color: var(--text-color);
   margin: 0 0.625rem;
@@ -181,7 +204,7 @@ h6 {
   text-transform: capitalize;
   line-height: 1.2;
   font-weight: var(--font-weight-1);
-  font-family: var(--headingfont-2);
+  font-family: var(--headingfont-5);
   color: var(--dark-color);
 }
 
@@ -381,7 +404,7 @@ i {
   padding: 20px;
   margin: 10px;
   border-radius: 10px;
-  width: 400px;
+  width: 450px;
   box-shadow: var(--shadow-4);
   z-index: 100;
 }
