@@ -8,6 +8,23 @@
     <link rel="stylesheet" href="default.css" />
     <title>Default starter | A display of global syles</title>
   </head>
+
+  <style>
+    /* Temporary */
+    .block {
+      display: block;
+      margin: 20px 0;
+    }
+
+    .tone {
+      background-color: var(--grey-300);
+    }
+
+    .flex {
+      display: flex;
+    }
+  </style>
+
   <body>
     <div class="container-4">
       <h1 class="top">Who's behind happy hues</h1>
@@ -154,8 +171,13 @@
       </form>
 
       <br />
+      <br />
 
-      <div class="loading loading-fancy"></div>
+      <div class="flex">
+        <div class="loading loading-sm"></div>
+        <div class="loading loading-fancy"></div>
+        <div class="loading loading-md"></div>
+      </div>
 
       <br />
       <br />

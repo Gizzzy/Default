@@ -6,7 +6,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Karma:wght@500&family=Neuton:wght@200&family=Prata&family=Roboto:wght@300&family=Sanchez&display=swap");
 
 :root {
-  /* grey shades*/
+  /* Grey shades*/
   --grey-100: #f8fafc;
   --grey-200: #f1f5f9;
   --grey-300: #e2e8f0;
@@ -17,7 +17,7 @@
   --grey-800: #334155;
   --grey-900: #1e293b;
 
-  /* primary (Blue shades) */
+  /* Primary (Blue shades) */
   --primary-100: #cde4fb;
   --primary-200: #9bcaf8;
   --primary-300: #68aff4;
@@ -28,7 +28,7 @@
   --primary-800: #02315f;
   --primary-900: #01182f;
 
-  /* secondary (purple shades) */
+  /* Tecondary (purple shades) */
   --secondary-100: #e2e0ff;
   --secondary-200: #c1beff;
   --secondary-300: #a29dff;
@@ -39,7 +39,7 @@
   --secondary-800: #282566;
   --secondary-900: #141233;
 
-  /* tertiary (pink shades) */
+  /* Tertiary (pink shades) */
   --tertiary-100: #fff2f5;
   --tertiary-200: #ffe6ea;
   --tertiary-300: #ffd9e0;
@@ -50,7 +50,7 @@
   --tertiary-800: #664d51;
   --tertiary-900: #332629;
 
-  /* stroke (green shades) */
+  /* Stroke (green shades) */
   --stroke-100: #cce6cc;
   --stroke-200: #99cc99;
   --stroke-300: #66b366;
@@ -61,7 +61,7 @@
   --stroke-800: #003300;
   --stroke-900: #001a00;
 
-  /* spin (orange shades) */
+  /* Spin (orange shades) */
   --spin-100: #fddfda;
   --spin-200: #fbbeb6;
   --spin-300: #f89e91;
@@ -72,7 +72,7 @@
   --spin-800: #62251d;
   --spin-900: #31130e;
 
-  /* split (yellow shades) */
+  /* Split (yellow shades) */
   --split-100: #ffe7cd;
   --split-200: #ffd09b;
   --split-300: #ffb86a;
@@ -83,7 +83,7 @@
   --split-800: #663702;
   --split-900: #331b01;
 
-  /* red */
+  /* Red */
   --red-100: #ffcccc;
   --red-200: #ff9999;
   --red-300: #ff6666;
@@ -94,45 +94,45 @@
   --red-800: #660000;
   --red-900: #330000;
 
-  /* dark */
+  /* Dark and light */
   --dark-color: #000000;
   --light-color: #ffffff;
 
-  /*heading fonts */
+  /*Heading fonts */
   --headingfont-1: "Neuton", sans-serif;
   --headingfont-2: "Prata", sans-serif;
   --headingfont-3: "Lato", sans-serif;
 
-  /* body fonts */
+  /* Body fonts */
   --bodyfont-1: "Roboto", sans-serif;
   --bodyfont-2: "Sanchez", sans-serif;
   --bodyfont-3: "karma", sans-serif;
   --bodyfont-4: "Nunito", sans-serif;
   --bodyfont-3: "Lato", sans-serif;
 
-  /* font weights */
+  /* Font weights */
   --font-weight-1: 400;
   --font-weight-2: 600;
 
-  /* font sizes */
+  /* Font sizes */
   --font-size-1: 1rem;
   --font-size-2: 1.025rem;
 
-  /* containers */
+  /* Containers */
   --max-width-1: 1100px;
   --max-width-2: 1200px;
   --max-width-3: 1300px;
   --max-width-4: 1400px;
 
-  /* transitions */
+  /* Transitions */
   --transition-1: 0.2s ease-in-out all;
   --transition-2: 0.3s ease-in-out all;
 
-  /* alerts */
+  /* Alerts */
   --alert-success: var(--stroke-400);
   --alert-error: var(--red-600);
 
-  /* box shadow*/
+  /* Box shadow*/
   --shadow-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   --shadow-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
     0 2px 4px -1px rgba(0, 0, 0, 0.06);
@@ -140,12 +140,10 @@
     0 4px 6px -2px rgba(0, 0, 0, 0.05);
   --shadow-4: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
     0 10px 10px -5px rgba(0, 0, 0, 0.04);
-  /* --shadow-5: 0 3px 10px rgba(0, 0, 0, 0.2); */
 
-  /* other variables */
+  /* Other variables */
   --background-color: var(--grey-100);
   --text-color: var(--dark-color);
-  /* color: #0000ff; */
 }
 
 html {
@@ -153,6 +151,7 @@ html {
 }
 
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -233,7 +232,7 @@ i {
   text-align: center;
 }
 
-/* containers */
+/* Containers */
 .container-1 {
   max-width: var(--max-width-1);
   overflow: auto;
@@ -337,7 +336,16 @@ i {
   color: var(--light-color);
 }
 
-/* alert */
+.bg-primary a,
+.btn-primary a,
+.bg-secondary a,
+.btn-secondary a,
+.bg-dark a,
+.btn-dark a {
+  color: #fff;
+}
+
+/* Alerts */
 .alert {
   margin: 50px 20px;
   padding: 15px 0;
@@ -345,7 +353,6 @@ i {
   font-weight: 400;
   color: #fff;
   letter-spacing: 1.5px;
-  /* border: 2px solid var(--secondary-500); */
 }
 
 .alert-error {
@@ -366,7 +373,7 @@ i {
   box-shadow: var(--shadow-4);
 }
 
-/* form */
+/* Form */
 .form {
   position: relative;
   background-color: #fff;
@@ -405,7 +412,28 @@ i {
   outline: none;
 }
 
-/* loading */
+/* Text sizes */
+.lead {
+  font-size: 20px;
+}
+
+.sm {
+  font-size: 1rem;
+}
+
+.md {
+  font-size: 2rem;
+}
+
+.lg {
+  font-size: 3rem;
+}
+
+.xl {
+  font-size: 4rem;
+}
+
+/* Loading */
 @keyframes spinner {
   to {
     transform: rotate(360deg);
@@ -439,14 +467,4 @@ i {
   width: 3rem;
   height: 2rem;
   border: 5px solid var(--grey-900);
-}
-
-/* Temporary */
-.block {
-  display: block;
-  margin: 20px 0;
-}
-
-.tone {
-  background-color: var(--grey-300);
 }
