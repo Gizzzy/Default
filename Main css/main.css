@@ -114,11 +114,10 @@
   --headingfont-3: "Lato", sans-serif;
   --headingfont-4: "Cormorant Garamond", sans-serif;
   --headingfont-5: "Gentium Basic", sans-serif;
-  --headingfont-6: "Eczar", sans-serif;
-  --headingfont-7: "Trirong", sans-serif;
-  --headingfont-8: "Proza Libre", sans-serif;
-  --headingfont-9: "Libre Franklin", sans-serif;
-  --headingfont-10: "Work Sans", sans-serif;
+  --headingfont-6: "Trirong", sans-serif;
+  --headingfont-7: "Proza Libre", sans-serif;
+  --headingfont-8: "Libre Franklin", sans-serif;
+  --headingfont-9: "Work Sans", sans-serif;
 
   /* Body fonts */
   --bodyfont-1: "Roboto", sans-serif; /* */
@@ -132,6 +131,9 @@
   --bodyfont-9: "Rubik", sans-serif; /* */ /* */
   --bodyfont-10: "Work Sans", sans-serif; /* */ /* */
   --bodyfont-11: "Taviraj", sans-serif; /* */
+
+  /* Fancy fonts */
+  --fancyfont-1: "Eczar", sans-serif;
 
   /* Font weights */
   --font-weight-1: 400;
@@ -187,7 +189,7 @@ html {
 body {
   line-height: 1.75;
   font-size: var(--font-size-1);
-  font-family: var(--bodyfont-11);
+  font-family: var(--bodyfont-10);
   background-color: var(--background-color);
   color: var(--text-color);
   margin: 0 0.625rem;
@@ -204,7 +206,7 @@ h6 {
   text-transform: capitalize;
   line-height: 1.2;
   font-weight: var(--font-weight-1);
-  font-family: var(--headingfont-5);
+  font-family: var(--headingfont-15);
   color: var(--dark-color);
 }
 
