@@ -14,6 +14,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Taviraj&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Eczar&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Gentium+Basic&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arvo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playball&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Handlee&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tangerine&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bad+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Marck+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Charm&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lateef&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Niconne&display=swap");
 
 :root {
   /* Grey shades*/
@@ -109,15 +123,18 @@
   --light-color: #ffffff;
 
   /*Heading fonts */
-  --headingfont-1: "Neuton", sans-serif; /* */
+  --headingfont-1: "Neuton", sans-serif; /* */ /* */
   --headingfont-2: "Prata", sans-serif;
-  --headingfont-3: "Lato", sans-serif;
-  --headingfont-4: "Cormorant Garamond", sans-serif;
-  --headingfont-5: "Gentium Basic", sans-serif;
-  --headingfont-6: "Trirong", sans-serif;
+  --headingfont-3: "Lato", sans-serif; /* */ /* */
+  --headingfont-4: "Cormorant Garamond", sans-serif; /* */ /* */
+  --headingfont-5: "Gentium Basic", sans-serif; /* */ /* */
+  --headingfont-6: "Trirong", sans-serif; /* */
   --headingfont-7: "Proza Libre", sans-serif;
   --headingfont-8: "Libre Franklin", sans-serif;
   --headingfont-9: "Work Sans", sans-serif;
+  --headingfont-10: "Montserrat", sans-serif;
+  --headingfont-11: "Josefin Sans", sans-serif;
+  --headingfont-12: "Lateef", sans-serif;
 
   /* Body fonts */
   --bodyfont-1: "Roboto", sans-serif; /* */
@@ -130,18 +147,34 @@
   --bodyfont-8: "Trirong", sans-serif; /* */
   --bodyfont-9: "Rubik", sans-serif; /* */ /* */
   --bodyfont-10: "Work Sans", sans-serif; /* */ /* */
-  --bodyfont-11: "Taviraj", sans-serif; /* */
+  --bodyfont-11: "Taviraj", sans-serif; /* */ /* */
 
   /* Fancy fonts */
   --fancyfont-1: "Eczar", sans-serif;
+  --fancyfont-2: "Dancing Script", sans-serif;
+  --fancyfont-3: "Lobster Two", sans-serif;
+  --fancyfont-4: "Playball", sans-serif;
+  --fancyfont-5: "Handlee", sans-serif;
+  --fancyfont-6: "Tangerine", sans-serif;
+  --fancyfont-7: "Bad Script", sans-serif;
+  --fancyfont-8: "Marck Script", sans-serif;
+  --fancyfont-9: "Charm", sans-serif;
+  --fancyfont-10: "Niconne", sans-serif;
 
   /* Font weights */
   --font-weight-1: 400;
   --font-weight-2: 600;
 
   /* Font sizes */
-  --font-size-1: 1rem;
-  --font-size-2: 1.025rem;
+  --font-size-1: 1rem; /* 16px */
+  --font-size-2: 1.025rem; /* 16.4px */
+  --font-size-3: 1.125rem; /* 18px */
+  --font-size-4: 1.25rem; /* 20px */
+  --font-size-5: 1.5625rem; /* 25px */
+  --font-size-6: 2rem; /* 32px */
+  --font-size-7: 3rem; /*  */
+  --font-size-8: 4rem; /*  */
+  --font-size-9: 5rem; /*  */
 
   /* Containers */
   --max-width-1: 1100px;
@@ -189,7 +222,7 @@ html {
 body {
   line-height: 1.75;
   font-size: var(--font-size-1);
-  font-family: var(--bodyfont-10);
+  font-family: var(--bodyfont-11);
   background-color: var(--background-color);
   color: var(--text-color);
   margin: 0 0.625rem;
@@ -206,7 +239,7 @@ h6 {
   text-transform: capitalize;
   line-height: 1.2;
   font-weight: var(--font-weight-1);
-  font-family: var(--headingfont-15);
+  font-family: var(--headingfont-1);
   color: var(--dark-color);
 }
 
@@ -215,14 +248,14 @@ h1 {
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: var(--font-size-6);
 }
 
 h3 {
   font-size: 1.5rem;
 }
 h4 {
-  font-size: 1rem;
+  font-size: var(--font-size-1);
 }
 
 p {
@@ -375,7 +408,7 @@ i {
   margin: 50px 20px;
   padding: 15px 0;
   border: 2px;
-  font-weight: 400;
+  font-weight: var(--font-weight-1);
   color: #fff;
   letter-spacing: 1.5px;
 }
@@ -418,7 +451,7 @@ i {
 }
 
 .form-control input {
-  font-size: 16px;
+  font-size: var(--font-size-1);
 }
 
 .form-control input[type="text"],
@@ -439,23 +472,23 @@ i {
 
 /* Text sizes */
 .lead {
-  font-size: 20px;
+  font-size: var(--font-size-4);
 }
 
 .sm {
-  font-size: 1rem;
+  font-size: var(--font-size-1);
 }
 
 .md {
-  font-size: 2rem;
+  font-size: var(--font-size-6);
 }
 
 .lg {
-  font-size: 3rem;
+  font-size: var(--font-size-7);
 }
 
 .xl {
-  font-size: 4rem;
+  font-size: var(--font-size-8);
 }
 
 /* Loading */
