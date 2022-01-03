@@ -30,6 +30,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Niconne&display=swap");
 
 :root {
+  /* COLORS */
   /* Grey shades*/
   --grey-100: #f8fafc;
   --grey-200: #f1f5f9;
@@ -86,26 +87,26 @@
   --stroke-900: #001a00;
 
   /* Spin (orange shades) */
-  --spin-100: #fddfda;
-  --spin-200: #fbbeb6;
-  --spin-300: #f89e91;
-  --spin-400: #f67d6d;
-  --spin-500: #f45d48;
-  --spin-600: #c34a3a;
-  --spin-700: #92382b;
-  --spin-800: #62251d;
-  --spin-900: #31130e;
+  --spin-100: #ffedcc;
+  --spin-200: #ffdb99;
+  --spin-300: #ffc966;
+  --spin-400: #ffb733;
+  --spin-500: #ffa500;
+  --spin-600: #cc8400;
+  --spin-700: #996300;
+  --spin-800: #664200;
+  --spin-900: #332100;
 
   /* Split (yellow shades) */
-  --split-100: #ffe7cd;
-  --split-200: #ffd09b;
-  --split-300: #ffb86a;
-  --split-400: #ffa138;
-  --split-500: #ff8906;
-  --split-600: #cc6e05;
-  --split-700: #995204;
-  --split-800: #663702;
-  --split-900: #331b01;
+  --split-100: #ffffcc;
+  --split-200: #ffff99;
+  --split-300: #ffff66;
+  --split-400: #ffff33;
+  --split-500: #ffff00;
+  --split-600: #cccc00;
+  --split-700: #999900;
+  --split-800: #666600;
+  --split-900: #333300;
 
   /* Red */
   --red-100: #ffcccc;
@@ -414,8 +415,7 @@ i {
 
 /* Alerts */
 .alert {
-  margin: 50px 20px;
-  padding: 15px 0;
+  margin: 20px 0px;
   border: 2px;
   font-weight: var(--font-weight-1);
   color: #fff;
@@ -428,6 +428,14 @@ i {
 
 .alert-success {
   background-color: var(--alert-success);
+}
+
+.alert i {
+  margin: 5px;
+  padding: 10px;
+  background-color: var(--grey-500);
+  border-radius: 50%;
+  color: var(--grey-700);
 }
 
 .card {
