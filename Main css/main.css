@@ -519,6 +519,10 @@ i {
   outline: none;
 }
 
+.form-info input {
+  font-size: var(--font-size-1);
+}
+
 /* Text sizes */
 .lead {
   font-size: var(--font-size-4);
