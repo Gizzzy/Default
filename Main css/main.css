@@ -122,6 +122,7 @@
   /* Dark and light */
   --dark-color: #000000;
   --light-color: #ffffff;
+  --link-color: #0000ff;
 
   /*Heading fonts */
   --headingfont-1: "Neuton", sans-serif; /* */ /* */
@@ -275,6 +276,7 @@ a {
   display: inline-block;
   cursor: pointer;
   text-decoration: none;
+  color: var(--link-color);
 }
 
 a:hover {
@@ -324,14 +326,85 @@ i {
   margin: 0 auto;
 }
 
+/* Top */
 .top {
-  margin: 20px 0 1rem 0;
+  margin: 20px 0 var(--font-size-1) 0;
+}
+
+.top-2 {
+  margin: 0 0 var(--font-size-1) 0;
+}
+
+.top-3 {
+  margin: 0;
+  padding: 0;
 }
 
 /* Backgrounds */
+.bg-white {
+  background-color: var(--light-color);
+  color: var(--dark-color);
+}
+
 .bg-grey {
   background-color: var(--grey-300);
   color: var(--text-color);
+}
+
+.bg-primary {
+  background-color: var(--primary-500);
+  color: var(--light-color);
+}
+
+.bg-secondary {
+  background-color: var(--secondary-500);
+  color: var(--light-color);
+}
+
+.bg-tertiary {
+  background-color: var(--tertiary-600);
+  color: var(--dark-color);
+}
+
+.bg-dark {
+  background-color: var(--dark-color);
+  color: var(--light-color);
+}
+
+.bg-primary a,
+.bg-secondary a,
+.bg-dark a {
+  color: var(--light-color);
+}
+
+.bg-grey a,
+.bg-white a {
+  color: var(--dark-color);
+}
+
+/* colors */
+.light-color {
+  color: var(--light-color);
+}
+
+.primary-color {
+  color: var(--primary-500);
+}
+
+.secondary-color {
+  color: var(--secondary-500);
+}
+
+.tertiary-color {
+  color: var(--tertiary-500);
+}
+
+.stroke-color {
+  color: var(--stroke-500);
+}
+
+.dark-color {
+  color: var(--dark-color);
 }
 
 /* Buttons */
@@ -339,20 +412,12 @@ i {
   display: inline-block;
   border: none;
   background-color: transparent;
-  padding: 20px 40px;
+  padding: 10px 30px;
   text-transform: capitalize;
   border-radius: 5px;
   box-shadow: var(--shadow-1);
   transition: var(--transition-2);
   text-align: center;
-}
-
-.btn-thin {
-  padding: 10px 30px;
-}
-
-.btn-medium {
-  padding: 15px 40px;
 }
 
 .btn-outline {
@@ -379,37 +444,50 @@ i {
   transform: none;
 }
 
-.btn-primary,
-.bg-primary {
+/* Button sizes  */ /* The default size of a button is thin*/
+.btn-thin {
+  padding: 10px 30px;
+}
+
+.btn-medium {
+  padding: 15px 40px;
+}
+
+.btn-lg {
+  padding: 20px 40px;
+}
+
+/* Button colors */
+.btn-primary {
   background-color: var(--primary-500);
   color: var(--light-color);
 }
 
-.btn-secondary,
-.bg-secondary {
+.btn-secondary {
   background-color: var(--secondary-500);
   color: var(--light-color);
 }
 
-.btn-tertiary,
-.bg-tertiary {
+.btn-tertiary {
   background-color: var(--tertiary-600);
   color: var(--dark-color);
 }
 
-.btn-dark,
-.bg-dark {
+.btn-dark {
   background-color: var(--dark-color);
   color: var(--light-color);
 }
 
-.bg-primary a,
 .btn-primary a,
-.bg-secondary a,
 .btn-secondary a,
-.bg-dark a,
 .btn-dark a {
   color: #fff;
+}
+
+.btn-outline a,
+.btn-tertiary a,
+.btn-transparent a {
+  color: var(--dark-color);
 }
 
 /* Alerts */
@@ -577,4 +655,107 @@ i {
   width: 3rem;
   height: 2rem;
   border: 5px solid var(--grey-900);
+}
+
+/* Text sizes */
+.sm {
+  font-size: var(--font-size-1);
+}
+
+.lead {
+  font-size: var(--font-size-4);
+}
+
+.md {
+  font-size: var(--font-size-6);
+}
+
+.lg {
+  font-size: var(--font-size-8);
+}
+
+.xl {
+  font-size: var(--font-size-10);
+}
+
+/* Margin */
+.my-1 {
+  margin: var(--font-size-1) 0;
+}
+
+.my-2 {
+  margin: var(--font-size-5) 0;
+}
+
+.my-3 {
+  margin: var(--font-size-6) 0;
+}
+
+.my-4 {
+  margin: var(--font-size-8) 0;
+}
+
+.my-5 {
+  margin: var(--font-size-10) 0;
+}
+
+.m-1 {
+  margin: var(--font-size-1);
+}
+
+.m-2 {
+  margin: var(--font-size-5);
+}
+
+.m-3 {
+  margin: var(--font-size-6);
+}
+
+.m-4 {
+  margin: var(--font-size-8);
+}
+
+.m-5 {
+  margin: var(--font-size-10);
+}
+
+/* Padding */
+.py-1 {
+  padding: var(--font-size-1) 0;
+}
+
+.py-2 {
+  padding: var(--font-size-5) 0;
+}
+
+.py-3 {
+  padding: var(--font-size-6) 0;
+}
+
+.py-4 {
+  padding: var(--font-size-8) 0;
+}
+
+.py-5 {
+  padding: var(--font-size-10) 0;
+}
+
+.p-1 {
+  padding: var(--font-size-1);
+}
+
+.p-2 {
+  padding: var(--font-size-5);
+}
+
+.p-3 {
+  padding: var(--font-size-6);
+}
+
+.p-4 {
+  padding: var(--font-size-8);
+}
+
+.p-5 {
+  padding: var(--font-size-10);
 }
