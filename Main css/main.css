@@ -235,8 +235,6 @@ body {
   font-family: var(--bodyfont-11);
   background-color: var(--background-color);
   color: var(--text-color);
-  margin: 0 0.625rem;
-  padding: 0 0.625rem;
 }
 
 h1,
@@ -274,6 +272,7 @@ p {
 }
 
 a {
+  display: inline-block;
   cursor: pointer;
   text-decoration: none;
 }
