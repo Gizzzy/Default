@@ -86,6 +86,17 @@
   --tertiary-800: #664d51;
   --tertiary-900: #332629;
 
+  /* gin */
+  --gin-100: #ccffff;
+  --gin-200: #99ffff;
+  --gin-300: #66ffff;
+  --gin-400: #33ffff;
+  --gin-500: #00ffff;
+  --gin-600: #00cccc;
+  --gin-700: #009999;
+  --gin-800: #006666;
+  --gin-900: #003333;
+
   /* Low */
   --low-100: #e1d9d9;
   --low-200: #c3b3b3;
@@ -108,6 +119,28 @@
   --stroke-800: #003300;
   --stroke-900: #001a00;
 
+  /* Tint */
+  --tint-100: #dbffe7;
+  --tint-200: #b8ffd0;
+  --tint-300: #94ffb8;
+  --tint-400: #71ffa1;
+  --tint-500: #4dff89;
+  --tint-600: #3ecc6e;
+  --tint-700: #2e9952;
+  --tint-800: #1f6637;
+  --tint-900: #0f331b;
+
+  /* Vet */
+  --vet-100: #ecf8e9;
+  --vet-200: #daf1d3;
+  --vet-300: #c7ebbe;
+  --vet-400: #b5e4a8;
+  --vet-500: #a2dd92;
+  --vet-600: #82b175;
+  --vet-700: #618558;
+  --vet-800: #41583a;
+  --vet-900: #202c1d;
+
   /* Spin (orange shades) */
   --spin-100: #ffedcc;
   --spin-200: #ffdb99;
@@ -129,6 +162,17 @@
   --split-700: #999900;
   --split-800: #666600;
   --split-900: #333300;
+
+  /* Flip */
+  --flip-100: #f4eed5;
+  --flip-200: #e9ddab;
+  --flip-300: #dfcc81;
+  --flip-400: #d4bb57;
+  --flip-500: #c9aa2d;
+  --flip-600: #a18824;
+  --flip-700: #79661b;
+  --flip-800: #504412;
+  --flip-900: #282209;
 
   /* Red */
   --red-100: #ffcccc;
@@ -390,6 +434,17 @@ i {
   margin: 20px 0 var(--font-size-1) 0;
 }
 
+.side {
+  margin: 0;
+  padding: 0;
+}
+
+.side-2 {
+}
+
+.side-3 {
+}
+
 /* Backgrounds */
 .bg-white {
   background-color: var(--light-color);
@@ -507,7 +562,7 @@ i {
   padding: 20px 40px;
 }
 
-.btn-lg-x {
+.btn-xl {
   padding: 10px 60px;
 }
 
@@ -655,7 +710,7 @@ i {
 .flex {
   display: flex;
   height: 100%;
-  gap: 30px;
+  gap: 20px;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
@@ -664,7 +719,7 @@ i {
 .grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
+  gap: 20px;
   height: 100%;
   justify-content: center;
   align-items: center;
