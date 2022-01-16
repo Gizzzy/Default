@@ -53,6 +53,17 @@
   --base-800: #000066;
   --base-900: #000033;
 
+  /* Shade */
+  --shade-100: #dce5fe;
+  --shade-200: #b8cbfc;
+  --shade-300: #95b2fb;
+  --shade-400: #7198f9;
+  --shade-500: #4e7ef8;
+  --shade-600: #3e65c6;
+  --shade-700: #2f4c95;
+  --shade-800: #1f3263;
+  --shade-900: #101932;
+
   /* Primary (Blue shades) */
   --primary-100: #cde4fb;
   --primary-200: #9bcaf8;
@@ -85,6 +96,17 @@
   --tertiary-700: #99737a;
   --tertiary-800: #664d51;
   --tertiary-900: #332629;
+
+  /* Sip */
+  --sip-100: #f7e6ed;
+  --sip-200: #eecddb;
+  --sip-300: #e6b3ca;
+  --sip-400: #dd9ab8;
+  --sip-500: #d581a6;
+  --sip-600: #aa6785;
+  --sip-700: #804d64;
+  --sip-800: #553442;
+  --sip-900: #2b1a21;
 
   /* gin */
   --gin-100: #ccffff;
@@ -129,6 +151,17 @@
   --tint-700: #2e9952;
   --tint-800: #1f6637;
   --tint-900: #0f331b;
+
+  /* Block */
+  --block-100: #ddefeb;
+  --block-200: #bbded6;
+  --block-300: #99cec2;
+  --block-400: #77bdad;
+  --block-500: #55ad99;
+  --block-600: #448a7a;
+  --block-700: #33685c;
+  --block-800: #22453d;
+  --block-900: #11231f;
 
   /* Vet */
   --vet-100: #ecf8e9;
