@@ -227,32 +227,48 @@
       <br />
       <br />
 
-      <table>
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Email</th>
-            <th>Age</th>
+      <table class="table">
+        <thead class="table-head">
+          <tr class="table-row">
+            <th class="colum-title">Name</th>
+            <th class="colum-title">Email</th>
+            <th class="colum-title">Status</th>
+            <th class="colum-title">Gender</th>
+            <th class="colum-title">Age</th>
           </tr>
         </thead>
 
-        <tbody>
-          <tr>
-            <td>Brad Traversy</td>
-            <td>bradtraversy@smth.com</td>
-            <td>35</td>
+        <tbody class="table-body">
+          <tr class="table-row">
+            <td class="table-detail">Chris Doe</td>
+            <td class="table-detail">chrisdoe@gmail.com</td>
+            <td class="table-detail">Husband</td>
+            <td class="table-detail">Male</td>
+            <td class="table-detail">53</td>
           </tr>
 
-          <tr>
-            <td>Jane Doe</td>
-            <td>janedoe@smth.com</td>
-            <td>20</td>
+          <tr class="table-row">
+            <td class="table-detail">Angeline Doe</td>
+            <td class="table-detail">angelinedoe@gmail.com</td>
+            <td class="table-detail">Wife</td>
+            <td class="table-detail">Female</td>
+            <td class="table-detail">47</td>
           </tr>
 
-          <tr>
-            <td>sara Williams</td>
-            <td>sarawilliams@smth.com</td>
-            <td>16</td>
+          <tr class="table-row">
+            <td class="table-detail">John Doe</td>
+            <td class="table-detail">johndoe@gmail.com</td>
+            <td class="table-detail">Son</td>
+            <td class="table-detail">Male</td>
+            <td class="table-detail">20</td>
+          </tr>
+
+          <tr class="table-row">
+            <td class="table-detail">Jane Doe</td>
+            <td class="table-detail">janedoe@gmail.com</td>
+            <td class="table-detail">Daughter</td>
+            <td class="table-detail">Female</td>
+            <td class="table-detail">15</td>
           </tr>
         </tbody>
       </table>
@@ -261,7 +277,7 @@
       <br />
       <br />
 
-      <form action="process.php" method="POST">
+      <form action="process.php" method="POST" class="form-report">
         <div>
           <label>First name</label>
           <input type="text" name="first-name" placeholder="Enter first name" />
