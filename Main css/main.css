@@ -1095,9 +1095,9 @@ Forms
   font-size: var(--font-size-1);
 }
 
-.report-info label,
+/* .report-info label,
 .report-info input {
-}
+} */
 
 .report-info .select option {
   font-family: var(--bodyfont-6);
