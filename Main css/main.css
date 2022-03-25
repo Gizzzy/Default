@@ -470,14 +470,14 @@ h1 {
 }
 
 h2 {
-  font-size: var(--font-size-6);
+  font-size: var(--font-size-7);
 }
 
 h3 {
-  font-size: var(--font-size-5);
+  font-size: var(--font-size-6);
 }
 h4 {
-  font-size: var(--font-size-1);
+  font-size: var(--font-size-5);
 }
 
 p {
@@ -518,8 +518,10 @@ pre {
   padding: 10px;
 }
 
+.select,
 input[type="text"],
-.select {
+input[type="number"],
+input[type="date"] {
   outline: none;
 }
 
@@ -724,7 +726,7 @@ Buttons
   text-transform: capitalize;
   border-radius: 5px;
   box-shadow: var(--shadow-1);
-  transition: var(--transition-4);
+  transition: var(--transition-5);
   text-align: center;
 }
 
@@ -744,9 +746,17 @@ Buttons
   width: 100%;
 }
 
+.btn-rounded {
+  border-radius: 30px;
+}
+
 .btn:hover,
 .btn:focus {
   transform: scale(0.98);
+}
+
+.btn-no-hover:hover {
+  transform: none;
 }
 
 /* 
@@ -765,13 +775,15 @@ Button sizes || The default size of any button is thin
 
 .btn-medium {
   padding: 15px 40px;
+  font-size: var(--font-size-1);
 }
 
 .btn-lg {
   padding: 20px 40px;
+  font-size: var(--font-size-1);
 }
 
-.btn-xl {
+.btn-xw {
   padding: 10px 60px;
 }
 
@@ -882,8 +894,8 @@ Forms
 
 .form {
   position: relative;
-  background-color: #fff;
-  color: #333;
+  background-color: var(--light-color);
+  color: var(--less-dark);
   padding: 20px;
   margin: 10px;
   border-radius: 10px;
@@ -957,7 +969,7 @@ Forms
 .form-2 {
   position: relative;
   background-color: var(--light-color);
-  color: #333;
+  color: var(--less-dark);
   padding: 20px;
   margin: 10px;
   border-radius: 10px;
@@ -995,7 +1007,6 @@ Forms
 .form-2 .button {
   display: flex;
   margin-top: 10px;
-  /* width: 300px; */
   margin-bottom: 10px;
   justify-content: center;
 }
@@ -1004,8 +1015,92 @@ Forms
   width: 300px;
 }
 
-.form-info .btn {
-  transition: var(--transition-5);
+/* ========= form-3 ========== */
+.form-3 {
+  position: relative;
+  color: var(--less-dark);
+  padding: 20px;
+  margin: 10px;
+  width: 550px;
+  z-index: 100;
+}
+
+.form-3 h2 {
+  text-align: center;
+}
+
+.form-details {
+  padding: 10px 0;
+  margin: 10px 0;
+}
+
+.form-details label {
+  text-transform: capitalize;
+  font-size: var(--font-size-3);
+  font-weight: 500;
+}
+
+.form-details input {
+  outline: none;
+  width: 100%;
+  height: 40px;
+  border: 2px solid var(--grey-400);
+  border-radius: 30px;
+  font-family: var(--bodyfont-6);
+  font-size: var(--font-size-1);
+}
+
+.form-details input,
+.form-details label {
+  display: block;
+  text-align: center;
+}
+
+.form-3 .button {
+  display: flex;
+  justify-content: center;
+}
+
+.form-3 .btn {
+  width: 300px;
+}
+
+/* ========== Form-report =========== */
+.form-report {
+  position: relative;
+  color: var(--less-dark);
+  padding: 20px;
+  margin: 10px;
+  /* width: 550px; */
+  z-index: 100;
+}
+
+.report-info {
+  margin: 10px 0;
+  padding: 10px 0;
+}
+
+.report-info label {
+  margin-right: 10px;
+  padding-right: 20px;
+}
+
+.report-info input {
+  outline: none;
+  /* width: 100%; */
+  height: 30px;
+  border: 2px solid var(--grey-400);
+  border-radius: 2px;
+  font-family: var(--bodyfont-6);
+  font-size: var(--font-size-1);
+}
+
+.report-info label,
+.report-info input {
+}
+
+.report-info .select option {
+  font-family: var(--bodyfont-6);
 }
 
 /* 
