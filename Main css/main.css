@@ -241,7 +241,7 @@ Colors || Grey, base, shade, primary, secondary, tertiary, sip, gin, low, stroke
   --dark-color: #000000;
   --text-color: var(--dark-color);
   --bg-dark: #002240;
-  --lessdark: #333;
+  --less-dark: #333;
   --light-color: #ffffff;
   --link-color: #0000ff;
 
@@ -992,6 +992,63 @@ Keyframes and Loading
   width: 3rem;
   height: 2rem;
   border: 5px solid var(--grey-900);
+}
+
+/* 
+================================================================================================================================
+Tables
+================================================================================================================================
+*/
+
+.table {
+  background-color: var(--grey-200);
+  margin: 20px 0;
+  padding: 40px;
+  min-width: 400px;
+  border: none;
+  border-radius: 5px;
+  border-collapse: collapse;
+  overflow: hidden;
+  box-shadow: var(--shadow-2);
+}
+
+.table-head-row {
+  background-color: var(--tint-400);
+}
+
+.column-title {
+  font-weight: bold;
+  text-align: left;
+}
+
+.column-title,
+.table-detail {
+  padding: 10px;
+  border-bottom: 1px solid var(--grey-500);
+  /* border-left: 1px solid var(--grey-500); */
+}
+
+.table-detail {
+  font-size: 15px;
+}
+
+.table-detail:first-child,
+.column-title:first-child {
+  padding-left: 30px;
+  /* border-left: none; */
+}
+
+.table-detail:last-child,
+.column-title:last-child {
+  padding-right: 30px;
+}
+
+.table-body-row:nth-of-type(even) {
+  background-color: var(--grey-400);
+}
+
+.table-body-row:last-of-type {
+  border-bottom: 3px solid var(--tint-600);
 }
 
 /* 
