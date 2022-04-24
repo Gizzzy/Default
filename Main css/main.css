@@ -837,26 +837,26 @@ Button Colors
 Alerts
 ================================================================================================================================
 */
-
 .alert {
-  margin: 20px 0px;
-  padding: 3px 10px;
-  border: 2px;
-  font-weight: var(--font-weight-1);
-  color: var(--stroke-200);
+  padding: 5px 20px;
+  border-radius: 2px;
+  max-width: 600px;
+  box-shadow: var(--shadow-4);
 }
 
 .alert-success {
-  background-color: var(--alert-success);
-  border: 1px solid var(--stroke-400);
-  color: var(--base-500);
+  background-color: var(--stroke-200);
+  border: 1px solid var(--stroke-500);
+  color: var(--stroke-700);
 }
 
 .alert-error {
-  background-color: var(--alert-error);
-  border: 1px solid var(--red-400);
-  color: var(--low-500);
+  background-color: var(--red-400);
+  border: 1px solid var(--red-700);
+  color: var(--grey-100);
 }
+
+
 
 /* 
 ================================================================================================================================
