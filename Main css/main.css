@@ -813,14 +813,21 @@ Button Colors
   color: var(--light-color);
 }
 
+.btn-error {
+  background-color: var(--red-400);
+  /* color: var(--light-color); */
+}
+
 .btn-primary a,
 .btn-secondary a,
+.btn-error a,
 .btn-dark a {
   color: #fff;
 }
 
 .btn-outline a,
 .btn-tertiary a,
+.btn-error a,
 .btn-transparent a {
   color: var(--dark-color);
 }
@@ -833,9 +840,8 @@ Alerts
 
 .alert {
   margin: 20px 0px;
-  padding: 0 20px;
+  padding: 3px 10px;
   border: 2px;
-  border-radius: 3px;
   font-weight: var(--font-weight-1);
   color: var(--stroke-200);
 }
@@ -1048,6 +1054,10 @@ Forms
   border-radius: 30px;
   font-family: var(--bodyfont-6);
   font-size: var(--font-size-1);
+  /* padding-left: 5px;
+  border-radius: 2px;
+  height: 30px;
+  font-size: 0.9rem; */
 }
 
 .form-details input,
@@ -1234,23 +1244,43 @@ Margins
 */
 
 .my-1 {
-  margin: var(--font-size-1) auto;
+  margin: var(--font-size-1) 0;
 }
 
 .my-2 {
-  margin: var(--font-size-5) auto;
+  margin: var(--font-size-5) 0;
 }
 
 .my-3 {
-  margin: var(--font-size-6) auto;
+  margin: var(--font-size-6) 0;
 }
 
 .my-4 {
-  margin: var(--font-size-8) auto;
+  margin: var(--font-size-8) 0;
 }
 
 .my-5 {
-  margin: var(--font-size-10) auto;
+  margin: 0 var(--font-size-10);
+}
+
+.mx-1 {
+  margin: 0 var(--font-size-1);
+}
+
+.mx-2 {
+  margin: 0 var(--font-size-5);
+}
+
+.mx-3 {
+  margin: 0 var(--font-size-6);
+}
+
+.mx-4 {
+  margin: 0 var(--font-size-8);
+}
+
+.mx-5 {
+  margin: 0 var(--font-size-10);
 }
 
 .m-1 {
@@ -1297,6 +1327,26 @@ Paddings
 
 .py-5 {
   padding: var(--font-size-10) 0;
+}
+
+.px-1 {
+  padding: 0 var(--font-size-1);
+}
+
+.px-2 {
+  padding: 0 var(--font-size-5);
+}
+
+.px-3 {
+  padding: 0 var(--font-size-6);
+}
+
+.px-4 {
+  padding: 0 var(--font-size-8);
+}
+
+.px-5 {
+  padding: 0 var(--font-size-10);
 }
 
 .p-1 {
