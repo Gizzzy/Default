@@ -45,7 +45,7 @@ ROOT
 :root {
   /* 
 ================================================================================================================================
-Colors || Grey, base, shade, primary, secondary, tertiary, sip, gin, low, stroke, ting, block, vet, spin, split, flip, red,
+Colors || Grey, base, shade, primary, secondary, tertiary, faded, sip, gin, low, stroke, ting, block, vet, spin, split, flip, red,
 ================================================================================================================================
 */
 
@@ -59,6 +59,37 @@ Colors || Grey, base, shade, primary, secondary, tertiary, sip, gin, low, stroke
   --grey-700: #475569;
   --grey-800: #344256;
   --grey-900: #1e293b;
+
+  /* complement */
+  --complement-10: #fbfbfb;
+  --complement-20: #f8f6f7;
+  --complement-30: #f4f2f3;
+  --complement-40: #f0edef;
+  --complement-50: #ede9ec;
+  --complement-60: #e9e4e8;
+  --complement-70: #e5e0e4;
+  --complement-80: #e1dbe0;
+  --complement-90: #ded7dc;
+  --complement-100: #dad2d8;
+  --complement-200: #c4bdc2;
+  --complement-300: #aea8ad;
+  --complement-400: #999397;
+  --complement-500: #837e82;
+  --complement-600: #6d696c;
+  --complement-700: #575456;
+  --complement-800: #413f41;
+  --complement-900: #2c2a2b;
+
+  /* tone */
+  --tone-100: #ffffff;
+  --tone-200: #d3d4da;
+  --tone-300: #a7a9b5;
+  --tone-400: #7b7f90;
+  --tone-500: #4f546b;
+  --tone-600: #232946;
+  --tone-700: #1c2138;
+  --tone-800: #15192a;
+  --tone-900: #0e101c;
 
   /* Base (Blue shades) */
   --base-100: #ccccff;
@@ -114,6 +145,28 @@ Colors || Grey, base, shade, primary, secondary, tertiary, sip, gin, low, stroke
   --tertiary-700: #99737a;
   --tertiary-800: #664d51;
   --tertiary-900: #332629;
+
+  /* faded */
+   --faded-100: #fbe1df;
+   --faded-200: #f8c3bf;
+   --faded-300: #f4a69e;
+   --faded-400: #f1887e;
+   --faded-500: #ed6a5e;
+   --faded-600: #be554b;
+   --faded-700: #8e4038;
+   --faded-800: #5f2a26;
+   --faded-900: #2f1513;
+
+   /* Lit */
+   --lit-100: #ffffff;
+   --lit-200: #ffe1cc;
+   --lit-300: #ffa466;
+   --lit-400: #ff8533;
+   --lit-500: #ff6700;
+   --lit-600: #cc5200;
+   --lit-700: #993e00;
+   --lit-800: #662900;
+   --lit-900: #331500;
 
   /* Sip */
   --sip-100: #f7e6ed;
@@ -244,6 +297,7 @@ Colors || Grey, base, shade, primary, secondary, tertiary, sip, gin, low, stroke
   --less-dark: #333;
   --light-color: #ffffff;
   --link-color: #0000ff;
+  --flex-color: #fffffb;
 
   /* 
 ================================================================================================================================
@@ -323,14 +377,15 @@ Font weights, Letter spaacings and font sizes
 
   /* 
 ================================================================================================================================
-Containers
+Containers width
 ================================================================================================================================
 */
 
-  --max-width-1: 1100px;
-  --max-width-2: 1200px;
-  --max-width-3: 1300px;
-  --max-width-4: 1400px;
+--max-width-1: 1100px;
+--max-width-2: 1200px;
+--max-width-3: 1300px;
+--max-width-4: 1400px;
+--max-width-5: 1500px;
 
   /* 
 ================================================================================================================================
@@ -396,7 +451,16 @@ Box Shadows
     0 4px 6px -2px rgba(0, 0, 0, 0.05);
   --shadow-4: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
     0 10px 10px -5px rgba(0, 0, 0, 0.04);
-} /* ===== End of root ===== */
+}
+/* ===== End of root ===== */
+
+/* 
+================================================================================================================================
+================================================================================================================================
+================================================================================================================================
+================================================================================================================================
+================================================================================================================================
+*/
 
 /* 
 ================================================================================================================================
@@ -405,7 +469,8 @@ Scrollsbar
 */
 
 body::-webkit-scrollbar {
-  width: 12px; /* width of the entire scrollbar */
+  width: 1vw; /* width of the entire scrollbar */
+  height: 1vh;
 }
 
 body::-webkit-scrollbar-track {
@@ -439,7 +504,7 @@ html {
 }
 
 *::after,
-::before {
+*::before {
   box-sizing: border-box;
 }
 
@@ -476,8 +541,13 @@ h2 {
 h3 {
   font-size: var(--font-size-6);
 }
+
 h4 {
   font-size: var(--font-size-5);
+}
+
+h5 {
+  font-size: var(--font-size-2);
 }
 
 p {
@@ -501,12 +571,6 @@ ul {
   list-style-type: none;
 }
 
-.img {
-  width: 100%;
-  display: block;
-  object-fit: cover;
-}
-
 i {
   padding: 10px;
 }
@@ -516,6 +580,16 @@ pre {
   background: var(--grey-900);
   color: #fff;
   padding: 10px;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
 }
 
 .select,
@@ -559,6 +633,14 @@ Top and side styles // Provides the margins on items on the top and side.
   margin: 20px 0 1rem 0;
 }
 
+.top-4 {
+  margin: 20px 0;
+}
+
+.top-5 {
+  margin: 10px 0;
+}
+
 .side {
   margin: 0;
   padding: 0;
@@ -600,6 +682,14 @@ Displays
 
 .grid-3 {
   grid-template-columns: repeat(3, 1fr);
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
 }
 
 /* 
@@ -671,6 +761,13 @@ Containers
 Backgrounds
 ================================================================================================================================
 */
+.bg-img {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  border-radius: 5px;
+  /* height: 200px; */
+}
 
 .bg-white {
   background-color: var(--light-color);
@@ -1243,7 +1340,7 @@ Text Sizes
 Margins
 ================================================================================================================================
 */
-
+/* ============ Y-axis ============ */
 .my-1 {
   margin: var(--font-size-1) 0;
 }
@@ -1261,9 +1358,10 @@ Margins
 }
 
 .my-5 {
-  margin: 0 var(--font-size-10);
+  margin: var(--font-size-10) 0;
 }
 
+/* ============ X-axis ============ */
 .mx-1 {
   margin: 0 var(--font-size-1);
 }
@@ -1284,6 +1382,49 @@ Margins
   margin: 0 var(--font-size-10);
 }
 
+/* ============ Top ============ */
+.mt-1 {
+  margin-top: var(--font-size-1);
+}
+
+.mt-2 {
+  margin-top: var(--font-size-5);
+}
+
+.mt-3 {
+  margin-top: var(--font-size-6);
+}
+
+.mt-4 {
+  margin-top: var(--font-size-8);
+}
+
+.mt-5 {
+  margin-top: var(--font-size-10);
+}
+
+/* ============ Bottom ============ */
+.mb-1 {
+  margin-bottom: var(--font-size-1);
+}
+
+.mb-2 {
+  margin-bottom: var(--font-size-5);
+}
+
+.mb-3 {
+  margin-bottom: var(--font-size-6);
+}
+
+.mb-4 {
+  margin-bottom: var(--font-size-8);
+}
+
+.mb-5 {
+  margin-bottom: var(--font-size-10);
+}
+
+/* ============ X and y-axis ============ */
 .m-1 {
   margin: var(--font-size-1);
 }
@@ -1310,6 +1451,7 @@ Paddings
 ================================================================================================================================
 */
 
+/* ============ y-axis ============ */
 .py-1 {
   padding: var(--font-size-1) 0;
 }
@@ -1330,6 +1472,7 @@ Paddings
   padding: var(--font-size-10) 0;
 }
 
+/* ============ x-axis ============ */
 .px-1 {
   padding: 0 var(--font-size-1);
 }
@@ -1350,6 +1493,49 @@ Paddings
   padding: 0 var(--font-size-10);
 }
 
+/* ============ Top ============ */
+.pt-1 {
+  padding-top: var(--font-size-1);
+}
+
+.pt-2 {
+  padding-top: var(--font-size-5);
+}
+
+.pt-3 {
+  padding-top: var(--font-size-6);
+}
+
+.pt-4 {
+  padding-top: var(--font-size-8);
+}
+
+.pt-5 {
+  padding-top: var(--font-size-10);
+}
+
+/* ============ Bottom ============ */
+.pb-1 {
+  padding-bottom: var(--font-size-1);
+}
+
+.pb-2 {
+  padding-bottom: var(--font-size-5);
+}
+
+.pb-3 {
+  padding-bottom: var(--font-size-6);
+}
+
+.pb-4 {
+  padding-bottom: var(--font-size-8);
+}
+
+.pb-5 {
+  padding-bottom: var(--font-size-10);
+}
+
+/* ============ x and y-axis ============ */
 .p-1 {
   padding: var(--font-size-1);
 }
