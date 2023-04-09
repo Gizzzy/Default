@@ -41,79 +41,249 @@ ROOT
 :root {
   /* 
 ================================================================================================================================
-Colors || Grey, base, shade, primary, secondary, tertiary, faded, sip, gin, low, stroke, ting, block, vet, spin, split, flip, red,
+    Colors
 ================================================================================================================================
 */
 
   /* Grey shades*/
+  --grey-100: #f8fafc;
+  --grey-200: #f1f5f9;
+  --grey-300: #e2e8f0;
+  --grey-400: #cbd5e1;
   --grey-500: #94a3b8;
+  --grey-600: #64748b;
+  --grey-700: #475569;
+  --grey-800: #344256;
+  --grey-900: #1e293b;
 
   /* complement */
+  --complement-10: #fbfbfb;
+  --complement-20: #f8f6f7;
+  --complement-30: #f4f2f3;
+  --complement-40: #f0edef;
   --complement-50: #ede9ec;
+  --complement-60: #e9e4e8;
+  --complement-70: #e5e0e4;
+  --complement-80: #e1dbe0;
+  --complement-90: #ded7dc;
+  --complement-100: #dad2d8;
+  --complement-200: #c4bdc2;
+  --complement-300: #aea8ad;
+  --complement-400: #999397;
   --complement-500: #837e82;
+  --complement-600: #6d696c;
+  --complement-700: #575456;
+  --complement-800: #413f41;
+  --complement-900: #2c2a2b;
 
   /* tone */
+  --tone-100: #ffffff;
+  --tone-200: #d3d4da;
+  --tone-300: #a7a9b5;
+  --tone-400: #7b7f90;
   --tone-500: #4f546b;
+  --tone-600: #232946;
+  --tone-700: #1c2138;
+  --tone-800: #15192a;
+  --tone-900: #0e101c;
 
   /* Base (Blue shades) */
+  --base-100: #ccccff;
+  --base-200: #9999ff;
+  --base-300: #6666ff;
+  --base-400: #3333ff;
   --base-500: #0000ff;
+  --base-600: #0000cc;
+  --base-700: #000099;
+  --base-800: #000066;
+  --base-900: #000033;
 
   /* Shade */
+  --shade-100: #dce5fe;
+  --shade-200: #b8cbfc;
+  --shade-300: #95b2fb;
+  --shade-400: #7198f9;
   --shade-500: #4e7ef8;
+  --shade-600: #3e65c6;
+  --shade-700: #2f4c95;
+  --shade-800: #1f3263;
+  --shade-900: #101932;
 
   /* Primary (Blue shades) */
+  --primary-100: #cde4fb;
+  --primary-200: #9bcaf8;
+  --primary-300: #68aff4;
+  --primary-400: #3695f1;
   --primary-500: #047aed;
+  --primary-600: #0362be;
+  --primary-700: #02498e;
+  --primary-800: #02315f;
+  --primary-900: #01182f;
 
   /* Secondary (purple shades) */
+  --secondary-100: #e2e0ff;
+  --secondary-200: #c1beff;
+  --secondary-300: #a29dff;
+  --secondary-400: #837dff;
   --secondary-500: #645cff;
+  --secondary-600: #504acc;
+  --secondary-700: #3c3799;
+  --secondary-800: #282566;
+  --secondary-900: #141233;
 
   /* Tertiary (pink shades) */
+  --tertiary-100: #fff2f5;
+  --tertiary-200: #ffe6ea;
+  --tertiary-300: #ffd9e0;
+  --tertiary-400: #ffcdd5;
   --tertiary-500: #ffc0cb;
+  --tertiary-600: #cc9aa2;
+  --tertiary-700: #99737a;
+  --tertiary-800: #664d51;
+  --tertiary-900: #332629;
 
   /* faded */
+  --faded-100: #fbe1df;
+  --faded-200: #f8c3bf;
+  --faded-300: #f4a69e;
+  --faded-400: #f1887e;
   --faded-500: #ed6a5e;
-
-  /* Crim */
-  --crim-500: #f1356d;
-
-  /* pizzazz */
-  --pizzazz-500: #e952de;
+  --faded-600: #be554b;
+  --faded-700: #8e4038;
+  --faded-800: #5f2a26;
+  --faded-900: #2f1513;
 
   /* Lit */
+  --lit-100: #ffffff;
+  --lit-200: #ffe1cc;
+  --lit-300: #ffa466;
+  --lit-400: #ff8533;
   --lit-500: #ff6700;
+  --lit-600: #cc5200;
+  --lit-700: #993e00;
+  --lit-800: #662900;
+  --lit-900: #331500;
 
   /* Sip */
+  --sip-100: #f7e6ed;
+  --sip-200: #eecddb;
+  --sip-300: #e6b3ca;
+  --sip-400: #dd9ab8;
   --sip-500: #d581a6;
+  --sip-600: #aa6785;
+  --sip-700: #804d64;
+  --sip-800: #553442;
+  --sip-900: #2b1a21;
 
   /* gin */
+  --gin-100: #ccffff;
+  --gin-200: #99ffff;
+  --gin-300: #66ffff;
+  --gin-400: #33ffff;
   --gin-500: #00ffff;
+  --gin-600: #00cccc;
+  --gin-700: #009999;
+  --gin-800: #006666;
+  --gin-900: #003333;
 
   /* Low */
+  --low-100: #e1d9d9;
+  --low-200: #c3b3b3;
+  --low-300: #a48d8d;
+  --low-400: #866767;
   --low-500: #684141;
+  --low-600: #533434;
+  --low-700: #3e2727;
+  --low-800: #2a1a1a;
+  --low-900: #150d0d;
 
   /* Stroke (green shades) */
+  --stroke-100: #cce6cc;
+  --stroke-200: #99cc99;
+  --stroke-300: #66b366;
+  --stroke-400: #339933;
   --stroke-500: #008000;
+  --stroke-600: #006600;
+  --stroke-700: #004d00;
+  --stroke-800: #003300;
+  --stroke-900: #001a00;
 
   /* Tint */
+  --tint-100: #dbffe7;
+  --tint-200: #b8ffd0;
+  --tint-300: #94ffb8;
+  --tint-400: #71ffa1;
   --tint-500: #4dff89;
+  --tint-600: #3ecc6e;
+  --tint-700: #2e9952;
+  --tint-800: #1f6637;
+  --tint-900: #0f331b;
 
   /* Block */
+  --block-100: #ddefeb;
+  --block-200: #bbded6;
+  --block-300: #99cec2;
+  --block-400: #77bdad;
   --block-500: #55ad99;
+  --block-600: #448a7a;
+  --block-700: #33685c;
+  --block-800: #22453d;
+  --block-900: #11231f;
 
   /* Vet */
+  --vet-100: #ecf8e9;
+  --vet-200: #daf1d3;
+  --vet-300: #c7ebbe;
+  --vet-400: #b5e4a8;
   --vet-500: #a2dd92;
+  --vet-600: #82b175;
+  --vet-700: #618558;
+  --vet-800: #41583a;
+  --vet-900: #202c1d;
 
   /* Spin (orange shades) */
+  --spin-100: #ffedcc;
+  --spin-200: #ffdb99;
+  --spin-300: #ffc966;
+  --spin-400: #ffb733;
   --spin-500: #ffa500;
+  --spin-600: #cc8400;
+  --spin-700: #996300;
+  --spin-800: #664200;
+  --spin-900: #332100;
 
   /* Split (yellow shades) */
+  --split-100: #ffffcc;
+  --split-200: #ffff99;
+  --split-300: #ffff66;
+  --split-400: #ffff33;
   --split-500: #ffff00;
+  --split-600: #cccc00;
+  --split-700: #999900;
+  --split-800: #666600;
+  --split-900: #333300;
 
   /* Flip */
+  --flip-100: #f4eed5;
+  --flip-200: #e9ddab;
+  --flip-300: #dfcc81;
+  --flip-400: #d4bb57;
   --flip-500: #c9aa2d;
+  --flip-600: #a18824;
+  --flip-700: #79661b;
+  --flip-800: #504412;
+  --flip-900: #282209;
 
   /* Red */
+  --red-100: #ffcccc;
+  --red-200: #ff9999;
+  --red-300: #ff6666;
+  --red-400: #ff3333;
   --red-500: #ff0000;
+  --red-600: #cc0000;
+  --red-700: #990000;
+  --red-800: #660000;
+  --red-900: #330000;
 
   /* Alert colors */
   --alert-success: #b3d9b3;
@@ -830,7 +1000,6 @@ Cards and pop-ups
 */
 
 .card {
-  /* width: 500px; */
   background-color: #fff;
   color: #333;
   padding: 20px;
